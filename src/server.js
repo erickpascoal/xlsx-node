@@ -13,7 +13,7 @@ console.log(apenasPersonagensFortes);
 
 const newWB = xlsx.utils.book_new();  //  instanciando novo arquivo excel
 const newWS = xlsx.utils.json_to_sheet(apenasPersonagensFortes); //criando a primeira aba
-xlsx.utils.book_append_sheet(newWB, newWS, "DBZ");   // monstando arquivo e dando nome à primeira aba
+xlsx.utils.book_append_sheet(newWB, newWS, "DBZ");   // montando arquivo e dando nome à primeira aba
 
 xlsx.writeFile(newWB, "Apenas Personagens fortes.xlsx");   // gerando arquivo
 
